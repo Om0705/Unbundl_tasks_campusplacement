@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  #carousel-container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  #carousel {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    margin-top: 20px;
+    align-items: center;
+    position: relative;
+  }
+
+  .carousel-item {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .product {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+  }
+  .product img{
+    margin: 0 auto;
+    object-fit: calc(100% -20px);
+  }
+
+  #prev, #next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+  }
+
+  #prev { left: 10px; }
+  #next { right: 10px; }
