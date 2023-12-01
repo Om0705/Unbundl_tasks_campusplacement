@@ -10,7 +10,7 @@ function updateSummary() {
   let items = 0;
   let total = 0;
 
-  for (let product of productContainer) {
+  for (let product of products) {
     let name = product.dataset.name;
     let price = parseInt(product.dataset.price);
     let quantity = parseInt(product.querySelector("input").value);
@@ -25,7 +25,7 @@ function updateSummary() {
   }
   summaryItems.innerHTML = "";
 
-  for (let product of productConatiner) {
+  for (let product of products) {
     let name = product.dataset.name;
     let quantity = parseInt(product.querySelector("input").value);
 
