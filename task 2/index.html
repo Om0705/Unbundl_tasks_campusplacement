@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="title">Customize your product bundle</div>
+        <div class="products">
+          <div class="product" data-name="Chocolate 1" data-price="10">
+            <img src="Images/img 1.jpg" alt="Chocolate 1"/>
+            <h3>Chocolate 1</h3>
+            <p>₹10</p>
+            <input type="number" min="0" max="8" value="0" onkeydown="return false" onchange="updateSummary()"/>
+          </div>
+          <div class="product" data-name="Chocolate 2" data-price="20">
+            <img src="Images/img 2.jpg" alt="Chocolate 2"/>
+            <h3>Chocolate 2</h3>
+            <p>₹20</p>
+            <input type="number" min="0" max="8" value="0" onkeydown="return false" onchange="updateSummary()"/>
+          </div>
+          <div class="product" data-name="Chocolate 3" data-price="30">
+            <img src="Images/img 3.jpg" alt="Chocolate 3"/>
+            <h3>Chocolate 3</h3>
+            <p>₹30</p>
+            <input type="number" min="0" max="8" value="0" onkeydown="return false" onchange="updateSummary()"/>
+          </div>
+          <div class="product" data-name="Chocolate 4" data-price="40">
+            <img src="Images/img 4.jpg" alt="Chocolate 4" />
+            <h3>Chocolate 4</h3>
+            <p>₹40</p>
+            <input type="number" min="0" max="8" value="0" onkeydown="return false" onchange="updateSummary()"/>
+          </div>
+          <div class="product" data-name="Chocolate 5" data-price="50">
+            <img
+              src="Images/img 5.jpg" alt="Chocolate 5" />
+            <h3>Chocolate 5</h3>
+            <p>₹50</p>
+            <input type="number" min="0" max="8" value="0" onkeydown="return false" onchange="updateSummary()"/>
+          </div>
+        </div>
+        <div class="summary">
+          <h2>Your Custom Pack</h2>
+          <ul id="summary-items">
+          </ul>
+          <p id="summary-total">Total: ₹0</p>
+          <button id="summary-button" onclick="placeOrder()">Place Order</button>
+        </div>
+      </div>
+</body>
+</html>
